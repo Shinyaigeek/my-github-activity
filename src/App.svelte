@@ -1,9 +1,13 @@
 <script>
+	import Header from "./components/Header.svelte";
+
+	
+
 	export let name;
 </script>
 
 <main>
-	<h1>Hello {name}!</h1>
+	<Header />
 	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
 </main>
 
