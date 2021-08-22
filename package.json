@@ -1,0 +1,8 @@
+{
+  "name": "my-github-activity",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Shinyaigeek/my-github-activity.git",
+  "author": "shinyaigeek <philispaxil@gmail.com>",
+  "license": "MIT"
+}
