@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "build": "rollup -c && yarn build:style",
-    "build:style": "tailwindcss build assets/style.css -o public/build/style.css",
+    "build:style": "tailwindcss build -i src/main.css -o public/build/style.css",
     "dev:style": "yarn build:style --watch",
     "dev": "rollup -c -w",
     "start": "sirv public --no-clear"
