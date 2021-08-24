@@ -1,4 +1,5 @@
 <script>
+  import GitHubActivity from "./components/GitHubActivity.svelte";
   import Header from "./components/Header.svelte";
 
   const getGitHubActivities = (async () => {
@@ -11,10 +12,14 @@
   <Header />
   {#await getGitHubActivities}
     <p>...waiting</p>
-  {:then items}
-  {#each items as item}
-	<div>{item.repository}</div>
-  {/each}
+  {:then activities}
+    <ul>
+      {#each activities as activity}
+        <li>
+          <GitHubActivity {activity} />
+        </li>
+      {/each}
+    </ul>
   {:catch error}
     <p>An error occurred!</p>
   {/await}
