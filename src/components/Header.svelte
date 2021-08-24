@@ -2,7 +2,7 @@
 </script>
 
 <main>
-	<h1>Shinyaigeek's GitHub Activity</h1>
+	<h1 class="text-red-100">Shinyaigeek's GitHub Activity</h1>
 </main>
 
 <style>
