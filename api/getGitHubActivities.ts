@@ -1,4 +1,4 @@
-import { VercelRequest, VercelResponse } from "@vercel/node";
+import type { VercelRequest, VercelResponse } from "@vercel/node";
 import { Octokit } from "@octokit/rest";
 
 const octokit = new Octokit({
@@ -19,6 +19,7 @@ export default async (request: VercelRequest, response: VercelResponse) => {
     return {
       repository,
       url: html_url,
+      number,
       title,
     };
   });
