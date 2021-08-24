@@ -1,9 +1,18 @@
 <script>
 </script>
 
-<main>
-	<h1 class="text-white bg-black text-3xl p-2">Shinyaigeek's GitHub Activity</h1>
-</main>
+<header class="bg-black p-2">
+  <img
+    src="https://shinyaigeek.dev/assets/static/icon_transparent_header.png"
+    alt="Shinyaigeek's icon"
+    width="36px"
+    height="36px"
+	class="inline"
+  />
+  <h1 class="text-white text-3xl inline">
+    Shinyaigeek's GitHub Activity
+  </h1>
+</header>
 
 <style>
 </style>
