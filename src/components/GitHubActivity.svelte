@@ -9,7 +9,7 @@
 
 <main>
   <div>
-    <a href="{activity.url}"
+    <a href={activity.url} class="hover:underline text-blue text-lg" target="_blank"
       >{activity.repository}#{activity.number}: {activity.title}</a
     >
   </div>

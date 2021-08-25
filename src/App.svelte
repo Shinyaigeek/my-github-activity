@@ -21,7 +21,7 @@
   {:then activities}
     <ul>
       {#each activities as activity}
-        <li>
+        <li class="my-2">
           <GitHubActivity {activity} />
         </li>
       {/each}

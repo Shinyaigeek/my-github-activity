@@ -15,6 +15,7 @@ module.exports = {
       indigo: "#4b0082",
       red: "#F26052",
       yellow: "#F2D544",
+      blue: "#1DA1F2"
     },
     screens: {
       tablet: "640px",
