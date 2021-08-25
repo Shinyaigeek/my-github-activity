@@ -13,6 +13,7 @@
 <Header />
 <main class="w-4/5 m-auto min-h-screen">
   <h1 class="text-3xl text-center my-3 dark:text-white">Shinyaigeek's GitHub Acitivity</h1>
+  <github-calendar user-name="shinyaigeek" tooltips="true" >Loading Fallback...</github-calendar>
   {#await getGitHubActivities}
     <div class="flex justify-center loading mx-auto my-3">
       <Loading />
