@@ -26,7 +26,7 @@
       <p>Loading...</p>
     </div>
   {:then activities}
-    <ul>
+    <ul class="my-3">
       {#each activities as activity}
         <li class="my-2">
           <GitHubActivity {activity} />

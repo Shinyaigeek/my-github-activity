@@ -7,10 +7,10 @@
     alt="Shinyaigeek's icon"
     width="36px"
     height="36px"
-	class="inline"
+    class="inline"
   />
   <h1 class="text-white text-3xl inline">
-    shinyaigeek.dev
+    <a href="https://shinyaigeek.dev/">shinyaigeek.dev</a>
   </h1>
 </header>
 
