@@ -2,6 +2,7 @@
   import GitHubActivity from "./components/GitHubActivity.svelte";
   import Header from "./components/Header.svelte";
   import Loading from "./components/Loading.svelte";
+  import Footer from "./components/Footer.svelte";
 
   const getGitHubActivities = (async () => {
     const response = await fetch("/api/getGitHubActivities");
@@ -10,7 +11,7 @@
 </script>
 
 <Header />
-<main class="w-4/5 m-auto">
+<main class="w-4/5 m-auto min-h-screen">
   <h1 class="text-3xl text-center my-3">Shinyaigeek's GitHub Acitivity</h1>
   {#await getGitHubActivities}
     <div class="flex justify-center loading mx-auto my-3">
@@ -31,6 +32,7 @@
     <p>An error occurred!</p>
   {/await}
 </main>
+<Footer />
 
 <style>
   .loading {
