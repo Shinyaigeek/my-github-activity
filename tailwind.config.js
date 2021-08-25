@@ -3,7 +3,7 @@ module.exports = {
     enabled: true,
     content: ["./src/**/*.svelte"],
   },
-  darkMode: false, // or 'media' or 'class'
+  darkMode: "media",
   theme: {
     extend: {},
     colors: {

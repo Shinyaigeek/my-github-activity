@@ -12,12 +12,12 @@
 
 <Header />
 <main class="w-4/5 m-auto min-h-screen">
-  <h1 class="text-3xl text-center my-3">Shinyaigeek's GitHub Acitivity</h1>
+  <h1 class="text-3xl text-center my-3 dark:text-white">Shinyaigeek's GitHub Acitivity</h1>
   {#await getGitHubActivities}
     <div class="flex justify-center loading mx-auto my-3">
       <Loading />
     </div>
-    <div class="flex justify-center mx-auto my-3 text-2xl">
+    <div class="flex justify-center mx-auto my-3 text-2xl dark:text-white">
       <p>Loading...</p>
     </div>
   {:then activities}
@@ -38,5 +38,11 @@
   .loading {
     height: 12vh;
     width: 12vh;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :global(body) {
+      background: #3c3c3b;
+    }
   }
 </style>
