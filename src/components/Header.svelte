@@ -10,7 +10,7 @@
 	class="inline"
   />
   <h1 class="text-white text-3xl inline">
-    Shinyaigeek's GitHub Activity
+    shinyaigeek.dev
   </h1>
 </header>
 

@@ -11,6 +11,7 @@
 
 <Header />
 <main class="w-4/5 m-auto">
+  <h1 class="text-3xl text-center my-3">Shinyaigeek's GitHub Acitivity</h1>
   {#await getGitHubActivities}
     <div class="flex justify-center loading mx-auto my-3">
       <Loading />
