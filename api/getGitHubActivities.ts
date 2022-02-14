@@ -9,7 +9,7 @@ const user = process.env.GITHUB_USERNAME;
 
 export default async (request: VercelRequest, response: VercelResponse) => {
   const { data } = await octokit.rest.search.issuesAndPullRequests({
-    q: `involves:${user} -user:${user} -user:aa-0921 author:${user} is:public `,
+    q: `involves:${user} -user:${user} author:${user} is:public `,
     per_page: 100,
     page: 1,
   });
